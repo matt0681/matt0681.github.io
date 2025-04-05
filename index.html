@@ -8,17 +8,6 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="min-h-screen bg-white text-gray-800 p-6 md:p-12 relative overflow-auto min-h-full">
-  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
-    <div class="max-w-5xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
-      <span class="text-xl font-bold text-emerald-600">ML</span>
-      <div class="space-x-6 text-sm font-medium text-gray-700">
-        <a href="#education" class="hover:text-emerald-600">Education</a>
-        <a href="#experience" class="hover:text-emerald-600">Experience</a>
-        <a href="#projects" class="hover:text-emerald-600">Projects</a>
-        <a href="#skills" class="hover:text-emerald-600">Skills</a>
-      </div>
-    </div>
-  </nav>
   <header class="relative z-10 max-w-5xl mx-auto mb-12">
   <div class="flex flex-col md:flex-row items-center md:items-start">
     <img src="profile.jpg" alt="Jane Doe Profile Photo" class="w-44 h-44 rounded-full object-cover shadow-md border border-gray-300 p-1 mb-6 md:mb-0 md:mr-8" />
@@ -26,7 +15,7 @@
       <h1 class="text-3xl md:text-5xl font-bold mb-4">
         Hi, I'm <span class="text-emerald-600">Matthew Lad</span>
       </h1>
-      <p class="text-lg md:text-xl mb-6">M.S. Computer Science at Notre Dame</p>
+      <p class="text-lg md:text-xl mb-2">M.S. Computer Science at Notre Dame, Data Scientist, Software Engineer</p>
       <p class="text-lg md:text-xl mb-6">Data Science & Software Engineering</p>
       <div class="flex space-x-4">
         <a href="https://github.com/matt0681" target="_blank" class="inline-flex items-center bg-white text-black px-3 py-1.5 rounded shadow text-sm">
@@ -41,7 +30,7 @@
   </div>
 </header>
 
-  <section class="max-w-5xl mx-auto mb-16">
+  <section id="education" class="max-w-5xl mx-auto mb-16">
   <h2 class="text-3xl font-semibold mb-6">Education</h2>
   <div class="space-y-4">
      <div>
@@ -55,7 +44,7 @@
   </div>
 </section>
 
-<section class="max-w-5xl mx-auto mb-16">
+<section id="experience" class="max-w-5xl mx-auto mb-16">
   <h2 class="text-3xl font-semibold mb-6">Experience</h2>
   <div class="space-y-4">
     <div>
@@ -78,7 +67,7 @@
   </div>
 </section>
 
-<section class="max-w-5xl mx-auto mb-16">
+<section id="projects" class="max-w-5xl mx-auto mb-16">
   <h2 class="text-3xl font-semibold mb-6">Projects</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded shadow">
@@ -94,7 +83,7 @@
     </div>
   </section>
 
-  <section class="max-w-5xl mx-auto mb-16">
+  <section id="skills" class="max-w-5xl mx-auto mb-16">
     <h2 class="text-3xl font-semibold mb-6">Skills</h2>
     <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc pl-6">
       <li>JavaScript / TypeScript</li>
