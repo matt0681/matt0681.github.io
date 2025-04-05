@@ -10,29 +10,50 @@
     html {
       scroll-behavior: smooth;
     }
+    body.dark-mode {
+      background-color: #0e1a2b;
+      color: #f0f0f0;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 3px 3px;
+      background-repeat: repeat;
+    }
   </style>
 </head>
 <body class="min-h-screen bg-white text-gray-800 p-6 md:p-12 relative overflow-auto min-h-full">
+  
+  <!-- Navigation bar -->
   <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
     <div class="max-w-5xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
+      
       <span class="text-xl font-bold text-emerald-600">JD</span>
+      
       <div class="space-x-6 text-sm font-medium text-gray-700">
         <a href="#education" class="hover:text-emerald-600">Education</a>
         <a href="#experience" class="hover:text-emerald-600">Experience</a>
         <a href="#projects" class="hover:text-emerald-600">Projects</a>
         <a href="#skills" class="hover:text-emerald-600">Skills</a>
       </div>
+
+      <button id="darkToggle" class="ml-4 text-gray-600 hover:text-emerald-600" title="Toggle dark mode">
+        <i data-lucide="moon" class="w-5 h-5"></i>
+      </button>
+
     </div>
   </nav>
+  
   <header class="relative z-10 max-w-5xl mx-auto mb-12 pt-24">
+
   <div class="flex flex-col md:flex-row items-center md:items-start">
+    
     <img src="profile.jpg" alt="Jane Doe Profile Photo" class="w-44 h-44 rounded-full object-cover shadow-md border border-gray-300 p-1 mb-6 md:mb-0 md:mr-8" />
+    
     <div class="mt-2">
       <h1 class="text-3xl md:text-5xl font-bold mb-4">
         Hi, I'm <span class="text-emerald-600">Matthew Lad</span>
       </h1>
       <p class="text-lg md:text-xl mb-2">M.S. Computer Science at Notre Dame</p>
       <p class="text-lg md:text-xl mb-6">Data Science & Software Engineering</p>
+      
       <div class="flex space-x-4">
         <a href="https://github.com/matt0681" target="_blank" class="inline-flex items-center bg-white text-black px-3 py-1.5 rounded shadow text-sm">
           <i data-lucide="github" class="w-4 h-4 mr-2"></i> GitHub
@@ -40,7 +61,6 @@
         <a href="https://linkedin.com/in/matthew-lad" target="_blank" class="inline-flex items-center bg-white text-black px-4 py-2 rounded shadow">
           <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> LinkedIn
         </a>
-        
       </div>
     </div>
   </div>
@@ -115,6 +135,12 @@
     &copy; 2025 Jane Doe. All rights reserved.
   </footer>
 
-  <script>lucide.createIcons();</script>
+  <script>
+    lucide.createIcons();
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
