@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jane Doe Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-[#b3dff8] text-gray-800 p-6 md:p-12 relative overflow-hidden">
+  <!-- Clouds -->
+  <svg class="absolute top-0 left-10 w-64 h-32 z-0" viewBox="0 0 200 100" fill="none">
+    <circle cx="40" cy="60" r="40" fill="#fff" />
+    <circle cx="80" cy="50" r="30" fill="#fff" />
+    <circle cx="120" cy="60" r="35" fill="#f1f5f9" />
+    <circle cx="90" cy="70" r="25" fill="#fff" />
+  </svg>
+
+  <header class="relative z-10 max-w-5xl mx-auto mb-12">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Jane Doe</h1>
+    <p class="text-xl md:text-2xl mb-6">Software Engineer specializing in full-stack web development, building clean and scalable applications.</p>
+    <div class="flex space-x-4">
+      <a href="https://github.com/janedoe" target="_blank" class="inline-flex items-center bg-white text-black px-4 py-2 rounded shadow">
+        <i data-lucide="github" class="w-4 h-4 mr-2"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/janedoe" target="_blank" class="inline-flex items-center border border-gray-600 text-black px-4 py-2 rounded shadow">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> LinkedIn
+      </a>
+      <a href="mailto:jane@example.com" class="inline-flex items-center text-black px-4 py-2 rounded hover:underline">
+        <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Contact
+      </a>
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto mb-16">
+    <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">Project Alpha</h3>
+        <p class="mb-4">Web-based analytics dashboard with real-time data visualization and auth.</p>
+        <a href="https://github.com/janedoe/project-alpha" target="_blank" class="inline-block border border-gray-600 px-4 py-2 rounded">View Code</a>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-bold mb-2">BetaApp</h3>
+        <p class="mb-4">Mobile app to track personal finances. Built with React Native & Firebase.</p>
+        <a href="https://github.com/janedoe/betaapp" target="_blank" class="inline-block border border-gray-600 px-4 py-2 rounded">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto mb-16">
+    <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-disc pl-6">
+      <li>JavaScript / TypeScript</li>
+      <li>React / Next.js</li>
+      <li>Node.js / Express</li>
+      <li>PostgreSQL / MongoDB</li>
+      <li>Python / Django</li>
+      <li>Git / GitHub / CI/CD</li>
+    </ul>
+  </section>
+
+  <svg class="absolute bottom-0 left-0 w-full h-48 z-0" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#bbf7d0" d="M0,288L60,266.7C120,245,240,203,360,192C480,181,600,203,720,208C840,213,960,203,1080,197.3C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" />
+    <path fill="#86efac" d="M0,320L80,304C160,288,320,256,480,234.7C640,213,800,203,960,213.3C1120,224,1280,256,1360,272L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" />
+    <path fill="#4ade80" d="M0,320L1440,320L1440,310L0,310Z" />
+  </svg>
+
+  <footer class="relative z-10 max-w-5xl mx-auto text-center text-sm text-gray-500 mt-12">
+    &copy; 2025 Jane Doe. All rights reserved.
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
